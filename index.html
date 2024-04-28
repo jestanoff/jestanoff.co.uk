@@ -1,30 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
     <title>Jestanoff Ltd</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header>
-        <h1>Jestanoff Ltd</h1>
-        <p>Empowering businesses through expert IT consultancy, audits, and quality assurance for seamless digital transformations</p>
+    <meta name="description" content="Empowering businesses through expert IT consultancy, audits, and quality assurance for seamless digital
+    transformations" />
+    <meta name="keywords" content="blockchain audit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link href="assets/styles.css" rel="stylesheet" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeLS10bAAAAAEE5oAINI-cSo9STuJrvDSLQY-o2"></script>
+    <script async defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <a href="/"
+        ><img alt="Jestanoff" class="logo fade-in" src="assets/Jestanoff-logo-small.png" title="Jestanoff"
+      /></a>
+      <div class="hero-banner">
+        <img
+          alt="Empty brown wooden table and blurry background of a clothing store"
+          class="here-banner-image"
+          src="assets/home-hero-background.jpg"
+        />
+        <h2 class="hero-slogan">Empowering businesses through expert IT consultancy, audits, and quality assurance for seamless digital
+          transformations</h2>
+        <div class="banner-triangle__holder">
+          <div class="banner-triangle__left" style="border-top-width: 170px; transform: translateZ(0px)"></div>
+          <div class="banner-triangle__right" style="border-top-width: 170px; transform: translateZ(0px)"></div>
+        </div>
+        <div class="triangle-container">
+          <div class="triangle-one"></div>
+          <div class="triangle-two"></div>
+          <div class="triangle-three"></div>
+        </div>
+      </div>
     </header>
-
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <i class="fas fa-laptop-code"></i>
-            <h3>IT Web Development Consultancy</h3>
-            <p>We provide expert consultancy services for web development projects, ensuring efficient and effective solutions.</p>
+    <main role="main">
+      <section class="what-we-do section">
+        <img
+          alt="Row of men suits in a sewing workshop"
+          class="image"
+          src="assets/what-we-do.jpg"
+          width="320"
+          height="291"
+        />
+        <div>
+          <h3>What we do</h3>
+          <i class="fas fa-laptop-code"></i>
+          <p>IT Web Development Consultancy</p>
+          <p>
+            We provide expert consultancy services for web development projects, ensuring efficient and effective
+          solutions.
+          </p>
         </div>
-        <div class="service">
-            <i class="fas fa-cube"></i>
-            <h3>EVM Blockchain Smart Contracts</h3>
-            <p>Our team specializes in developing smart contracts on the Ethereum Virtual Machine (EVM) blockchain for various applications.</p>
+      </section>
+      <section class="services card section">
+        <div>
+          <h3>EVM Blockchain Smart Contracts</h3>
+          <i class="fas fa-cube"></i>
+          <p>
+            Our team specializes in developing smart contracts on the Ethereum Virtual Machine (EVM) blockchain for
+          various applications.
+          </p>
         </div>
-    </section>
-</body>
+      </section>
+      <section class="contact card section">
+        <form id="contact-form">
+          <fieldset class="contact-us-form">
+            <legend>Contact us</legend>
+            <p>If you are interested, please fill the form</p>
+            <input id="name" name="name" placeholder="Name" required type="text" />
+            <input id="email" name="name" placeholder="Email" required type="email" />
+            <input id="subject" name="subject" placeholder="Subject" type="text" />
+            <textarea id="message" name="message" required placeholder="Message"></textarea>
+            <div class="captcha" id="recaptcha"></div>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>
+        <small>Copyright &copy; <time id="copy-year"></time></small>
+      </p>
+    </footer>
+  </body>
 </html>
